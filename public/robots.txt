@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /servicios
+Allow: /servicios/terapia-familiar
+Allow: /servicios/terapia-pareja
+Allow: /servicios/terapia-individual
+Allow: /blog
+Allow: /blog/ansiedad-sintomas-tratamiento
+Allow: /blog/depresion-como-identificarla
+Allow: /blog/estres-laboral-manejo
+Allow: /blog/autoestima-fortalecimiento
+Allow: /blog/relaciones-saludables-comunicacion
+Disallow: /agenda-cita
+
+Sitemap: https://example.com/sitemap.xml
