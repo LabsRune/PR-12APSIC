@@ -1,11 +1,9 @@
 
-import { useNavigate } from 'react-router-dom';
 import Header from '../../home/components/Header';
 import Footer from '../../home/components/Footer';
 import WhatsAppButton from '../../../components/base/WhatsAppButton';
 
 const TerapiaIndividualPage = () => {
-  const navigate = useNavigate();
 
   const scrollToCalendar = () => {
     const element = document.getElementById('calendario-reserva');
@@ -71,6 +69,8 @@ Es importante entender que no estás sólo en tu proceso y se establecerá un v�
         <div className="tidycal-wrapper">
           <iframe
             className="tidycal-embed"
+            title='Calendario de disponibilidad de Yalimar para las consultas'
+
             data-path="dr87152/sesion-individua"
             src="https://tidycal.com/dr87152/sesion-individua?embed=true"
             style={{border: 'none', width: '1px', minWidth: '100%', height: '81px', overflow: 'hidden', minHeight: '500px'}}

@@ -1,13 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Custom styles can be added below */
-.tidycal-embed[data-custom="true"] iframe {
-  max-height: 20px !important;
-  overflow-y: scroll;
-  width: 100% !important;
-  display: flex;
-  justify-content: flex-start;
-    align-items: flex-start;
-}

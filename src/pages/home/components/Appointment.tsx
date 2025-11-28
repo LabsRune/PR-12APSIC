@@ -1,71 +1,6 @@
 
-import { useState } from 'react';
 
 const Appointment = () => {
-  const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    telefono: '',
-    fecha: '',
-    hora: '',
-    modalidad: 'online',
-    mensaje: ''
-  });
-  
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      const formBody = new URLSearchParams();
-      Object.entries(formData).forEach(([key, value]) => {
-        formBody.append(key, value);
-      });
-
-      const response = await fetch('https://readdy.ai/api/form/d4aiddb6dpbkhrueeqgg', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: formBody
-      });
-
-      if (response.ok) {
-        setSubmitMessage('¡Tu cita ha sido agendada exitosamente! Te contactaré pronto para confirmar los detalles.');
-        setFormData({
-          nombre: '',
-          email: '',
-          telefono: '',
-          fecha: '',
-          hora: '',
-          modalidad: 'online',
-          mensaje: ''
-        });
-      } else {
-        setSubmitMessage('Hubo un error al enviar tu solicitud. Por favor, intenta nuevamente.');
-      }
-    } catch (error) {
-      setSubmitMessage('Hubo un error al enviar tu solicitud. Por favor, intenta nuevamente.');
-    }
-    
-    setIsSubmitting(false);
-  };
-
-  const timeSlots = [
-    '09:00', '10:00', '11:00', '12:00', 
-    '14:00', '15:00', '16:00', '17:00', '18:00'
-  ];
 
   return (
     <section id="agenda-cita" className="py-20 bg-white">
@@ -146,6 +81,8 @@ const Appointment = () => {
         <div className="tidycal-wrapper">
           <iframe
             className="tidycal-embed"
+            title='Calendario de disponibilidad de Yalimar para las consultas'
+
             data-path="dr87152/sesion-individua"
             src="https://tidycal.com/dr87152/sesion-individua?embed=true"
             style={{border: 'none', width: '1px', minWidth: '100%', height: '399px', overflow: 'hidden', minHeight: '500px'}}

@@ -43,7 +43,7 @@ const Header = () => {
       <nav className="px-6 lg:px-12 py-4">
         <div className="flex items-center justify-between">
           <h1 className="text-1xl font-light text-[#678E2A] font-['Pacifico'] cursor-pointer flex items-center gap-2" onClick={() => navigate('/')}>
-                      <img src='public/YalimarLogo.png' alt="Logo" className="h-10 cursor-pointer w-35" onClick={() => navigate('/')} />
+                      <img src='/YalimarLogo.png' alt="LogoYalimarRuiz" className="h-10 cursor-pointer w-35" onClick={() => navigate('/')} />
 
             Yalimar Ruiz
           </h1>
