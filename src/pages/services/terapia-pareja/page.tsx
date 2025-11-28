@@ -45,152 +45,38 @@ const TerapiaParejaPage = () => {
 
       {/* Main Content Section */}
       <section className="py-16">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Service Description */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                ¿En qué consiste la Terapia en Pareja?
-              </h2>
-              <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
-                <p>
-                  La terapia en pareja es un proceso terapéutico diseñado para ayudar a las parejas a mejorar 
-                  su relación, resolver conflictos y fortalecer su vínculo emocional. Trabajamos juntos para 
-                  identificar patrones de comunicación disfuncionales y desarrollar herramientas efectivas.
-                </p>
-                <p>
-                  Durante las sesiones, exploramos las dinámicas de la relación, abordamos temas como la 
-                  comunicación, la intimidad, la confianza y la resolución de conflictos. El objetivo es 
-                  crear un espacio seguro donde ambos miembros puedan expresarse y trabajar hacia objetivos comunes.
-                </p>
-                <p>
-                  Esta terapia es beneficiosa para parejas que enfrentan crisis, problemas de comunicación, 
-                  infidelidad, diferencias en objetivos de vida, o simplemente desean fortalecer su relación 
-                  y prevenir futuros conflictos.
-                </p>
-              </div>
-            </div>
-
-            {/* Calendar Section */}
-            <div id="calendario-reserva" className="bg-gray-50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-[#678E2A] mb-6">
-                Reserva tu Sesión
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Agenda tu primera consulta de pareja y comienza a reconstruir vuestra relación.
-              </p>
-              
-              {/* Calendar Form */}
-              <form 
-                action="https://readdy.ai/api/form/d4aijdr6dpbkhrueeqig" 
-                method="POST" 
-                data-readdy-form
-                className="space-y-4"
-              >
-                <input type="hidden" name="servicio" value="Terapia en Pareja" />
-                
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Nombres de la Pareja *
-                  </label>
-                  <input
-                    type="text"
-                    name="nombres_pareja"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="Nombre de ambos miembros"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Teléfono de Contacto *
-                  </label>
-                  <input
-                    type="tel"
-                    name="telefono"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="Número de teléfono"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="email@ejemplo.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Fecha Preferida *
-                  </label>
-                  <input
-                    type="date"
-                    name="fecha"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Modalidad *
-                  </label>
-                  <select
-                    name="modalidad"
-                    required
-                    className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm appearance-none"
-                  >
-                    <option value="">Selecciona una modalidad</option>
-                    <option value="presencial">Presencial</option>
-                    <option value="online">Online</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Tiempo de Relación
-                  </label>
-                  <input
-                    type="text"
-                    name="tiempo_relacion"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="Ej: 3 años, 6 meses..."
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Motivo de Consulta
-                  </label>
-                  <textarea
-                    name="motivo_consulta"
-                    rows={3}
-                    maxLength={500}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm resize-none"
-                    placeholder="Cuéntanos brevemente qué los motiva a buscar terapia de pareja..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-[#678E2A] text-white py-3 px-6 rounded-lg hover:bg-[#5a7a24] transition-colors font-semibold whitespace-nowrap"
-                >
-                  Agendar Cita
-                </button>
-              </form>
-            </div>
-          </div>
+  <div className="max-w-6xl mx-auto px-6 lg:px-12">
+    <div className="">
+      {/* Service Description */}
+      <div className="w-full">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          ¿En qué consiste la Terapia en Pareja?
+        </h2>
+        <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+<p>
+  Este abordaje brinda un espacio seguro y neutral diseñado para hablar de temas difíciles y, desde una nueva perspectiva, encontrar soluciones sanas y funcionales para la pareja generando nuevos mecanismos para manejar sus diferencias y transformar patrones de comportamiento que generan conflicto.
+  </p>
+<p>Dejar en claro que dentro de una pareja todos tienen el mismo valor, las mismas oportunidades y entender que aunque tengan un proyecto de vida en común, también cuentan con un proyecto de vida como individuo.
+</p>
         </div>
-      </section>
+      </div>
+
+      {/* Calendar Section */}
+      <div id="calendario-reserva" className="w-full  mt-12">
+        {/* Calendar Form */}
+        <div className="tidycal-wrapper">
+          <iframe
+            className="tidycal-embed"
+            data-path="dr87152/sesion-en-pareja"
+            src="https://tidycal.com/dr87152/sesion-en-pareja?embed=true"
+            style={{border: 'none', width: '1px', minWidth: '100%', height: '81px', overflow: 'hidden', minHeight: '500px'}}
+
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Treatment Information */}
       <section className="py-16 bg-gray-50">

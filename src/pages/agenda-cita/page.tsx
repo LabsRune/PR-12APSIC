@@ -6,16 +6,7 @@ import WhatsAppButton from '../../components/base/WhatsAppButton';
 
 const AgendaCitaPage = () => {
   const [currentReview, setCurrentReview] = useState(0);
-  const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    telefono: '',
-    tipoTerapia: '',
-    modalidad: '',
-    fechaPreferida: '',
-    horaPreferida: '',
-    mensaje: ''
-  });
+
 
   const reviews = [
     {
@@ -68,47 +59,7 @@ const AgendaCitaPage = () => {
     setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    try {
-      const formDataToSend = new FormData();
-      Object.entries(formData).forEach(([key, value]) => {
-        formDataToSend.append(key, value);
-      });
-
-      const response = await fetch('https://readdy.ai/api/form/d4aiul2p4k429g8lb740', {
-        method: 'POST',
-        body: formDataToSend
-      });
-
-      if (response.ok) {
-        alert('¡Cita agendada exitosamente! Te contactaremos pronto para confirmar los detalles.');
-        setFormData({
-          nombre: '',
-          email: '',
-          telefono: '',
-          tipoTerapia: '',
-          modalidad: '',
-          fechaPreferida: '',
-          horaPreferida: '',
-          mensaje: ''
-        });
-      } else {
-        alert('Hubo un error al enviar tu solicitud. Por favor, intenta nuevamente.');
-      }
-    } catch (error) {
-      alert('Error de conexión. Por favor, verifica tu internet e intenta nuevamente.');
-    }
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -256,7 +207,7 @@ const AgendaCitaPage = () => {
 
       {/* Appointment Form */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#678E2A] mb-6">
               Agenda tu Primera Sesión
@@ -266,158 +217,16 @@ const AgendaCitaPage = () => {
               tu cita y resolver cualquier duda que tengas.
             </p>
           </div>
+                  <div className="tidycal-wrapper">
+          <iframe
+            className="tidycal-embed"
+            data-path="dr87152/sesion-individua"
+            src="https://tidycal.com/dr87152/sesion-individua?embed=true"
+            style={{border: 'none', width: '1px', minWidth: '100%', height: '399px', overflow: 'hidden', minHeight: '500px'}}
 
-          <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-xl shadow-[#AFAA2C]/10" data-readdy-form>
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-2">
-                  Nombre Completo *
-                </label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  value={formData.nombre}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#678E2A] focus:border-[#678E2A] transition-colors"
-                  placeholder="Tu nombre completo"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Correo Electrónico *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#678E2A] focus:border-[#678E2A] transition-colors"
-                  placeholder="tu@email.com"
-                />
-              </div>
-            </div>
+          ></iframe>
+        </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-2">
-                  Teléfono *
-                </label>
-                <input
-                  type="tel"
-                  id="telefono"
-                  name="telefono"
-                  value={formData.telefono}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#678E2A] focus:border-[#678E2A] transition-colors"
-                  placeholder="+52 123 456 7890"
-                />
-              </div>
-              <div>
-                <label htmlFor="tipoTerapia" className="block text-sm font-medium text-gray-700 mb-2">
-                  Tipo de Terapia *
-                </label>
-                <select
-                  id="tipoTerapia"
-                  name="tipoTerapia"
-                  value={formData.tipoTerapia}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#678E2A] focus:border-[#678E2A] transition-colors appearance-none bg-white"
-                >
-                  <option value="">Selecciona un tipo</option>
-                  <option value="individual">Terapia Individual</option>
-                  <option value="pareja">Terapia de Pareja</option>
-                  <option value="familiar">Terapia Familiar</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label htmlFor="modalidad" className="block text-sm font-medium text-gray-700 mb-2">
-                  Modalidad Preferida *
-                </label>
-                <select
-                  id="modalidad"
-                  name="modalidad"
-                  value={formData.modalidad}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#678E2A] focus:border-[#678E2A] transition-colors appearance-none bg-white"
-                >
-                  <option value="">Selecciona modalidad</option>
-                  <option value="presencial">Presencial (México)</option>
-                  <option value="online">Online</option>
-                </select>
-              </div>
-              <div>
-                <label htmlFor="fechaPreferida" className="block text-sm font-medium text-gray-700 mb-2">
-                  Fecha Preferida
-                </label>
-                <input
-                  type="date"
-                  id="fechaPreferida"
-                  name="fechaPreferida"
-                  value={formData.fechaPreferida}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#678E2A] focus:border-[#678E2A] transition-colors"
-                />
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <label htmlFor="horaPreferida" className="block text-sm font-medium text-gray-700 mb-2">
-                Hora Preferida
-              </label>
-              <select
-                id="horaPreferida"
-                name="horaPreferida"
-                value={formData.horaPreferida}
-                onChange={handleInputChange}
-                className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#678E2A] focus:border-[#678E2A] transition-colors appearance-none bg-white"
-              >
-                <option value="">Selecciona una hora</option>
-                <option value="09:00">9:00 AM</option>
-                <option value="10:00">10:00 AM</option>
-                <option value="11:00">11:00 AM</option>
-                <option value="12:00">12:00 PM</option>
-                <option value="14:00">2:00 PM</option>
-                <option value="15:00">3:00 PM</option>
-                <option value="16:00">4:00 PM</option>
-                <option value="17:00">5:00 PM</option>
-                <option value="18:00">6:00 PM</option>
-              </select>
-            </div>
-
-            <div className="mb-8">
-              <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-2">
-                Mensaje Adicional
-              </label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                value={formData.mensaje}
-                onChange={handleInputChange}
-                rows={4}
-                maxLength={500}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#678E2A] focus:border-[#678E2A] transition-colors resize-none"
-                placeholder="Cuéntanos brevemente qué te gustaría trabajar en terapia o cualquier pregunta que tengas..."
-              ></textarea>
-              <p className="text-sm text-gray-500 mt-1">Máximo 500 caracteres</p>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-[#678E2A] text-white py-4 px-8 rounded-lg font-semibold text-lg hover:bg-[#5a7a24] transition-colors cursor-pointer whitespace-nowrap"
-            >
-              Agendar Mi Cita
-            </button>
-          </form>
         </div>
       </section>
 

@@ -34,59 +34,25 @@ const About = () => {
                 Dra. Yalimar Ruiz
               </h4>
               <p className="text-xl font-medium mb-6" style={{color: '#678E2A'}}>
-                Psicóloga Clínica Colegiada
+                Psicóloga Clínica
               </p>
               
               <div className="prose prose-lg text-gray-600">
+
                 <p className="mb-6">
-                  Soy una psicóloga clínica especializada en terapia cognitivo-conductual con más de 8 años de experiencia 
-                  ayudando a individuos, parejas y familias a superar sus desafíos emocionales y mejorar su calidad de vida.
+Hola, soy psicologa clínica con especialización en evaluación y diagnostico de la personalidad. Mi experiencia se centra en el abordaje terapéutico de la depresión, ansiedad, autoestima y tipos de apego.
                 </p>
                 
                 <p className="mb-6">
-                  Mi enfoque terapéutico se basa en crear un ambiente seguro y empático donde mis pacientes puedan 
-                  explorar sus emociones, desarrollar herramientas de afrontamiento efectivas y alcanzar sus objetivos 
-                  de bienestar mental.
+Mi intención es acompañarte y brindarte un espacio seguro a lo largo de tu proceso. En nuestras sesiones lograremos identificar síntomas, ideas y conductas que necesiten ser reestructuradas para generar nuevas habilidades de enfrentamiento para lograr tu bienestar.
+Todos atravesamos momentos difíciles y hablar con un profesional te ayudará a procesar lo que sientes 
+
                 </p>
               </div>
             </div>
 
             {/* Educación y certificaciones */}
             <div className="space-y-6">
-              <div>
-                <h5 className="text-lg font-semibold text-gray-800 mb-4">Formación Académica</h5>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <div className="w-6 h-6 flex items-center justify-center mr-3 mt-1">
-                      <i className="ri-graduation-cap-line" style={{color: '#678E2A'}}></i>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-800">Doctorado en Psicología Clínica</p>
-                      <p className="text-sm text-gray-600">Universidad Nacional de Psicología</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="w-6 h-6 flex items-center justify-center mr-3 mt-1">
-                      <i className="ri-award-line" style={{color: '#678E2A'}}></i>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-800">Especialización en Terapia de Pareja y Familiar</p>
-                      <p className="text-sm text-gray-600">Instituto de Terapia Sistémica</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="w-6 h-6 flex items-center justify-center mr-3 mt-1">
-                      <i className="ri-certificate-line" style={{color: '#678E2A'}}></i>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-800">Certificación en Terapia Cognitivo-Conductual</p>
-                      <p className="text-sm text-gray-600">Asociación Internacional de TCC</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               {/* Especialidades */}
               <div>
@@ -115,9 +81,7 @@ const About = () => {
             {/* Quote */}
             <div className="bg-white rounded-xl p-6 shadow-lg border-l-4" style={{borderLeftColor: '#678E2A'}}>
               <p className="text-gray-700 italic text-lg mb-4">
-                "Creo firmemente que cada persona tiene la capacidad de sanar y crecer. Mi rol es acompañarte 
-                en ese proceso, proporcionándote las herramientas y el apoyo necesario para que puedas alcanzar 
-                tu máximo potencial emocional."
+                 “TU SALUD MENTAL TAMBIÉN MERECE UN ESPACIO”
               </p>
               <p className="font-semibold" style={{color: '#678E2A'}}>- Dra. Yalimar Ruiz</p>
             </div>

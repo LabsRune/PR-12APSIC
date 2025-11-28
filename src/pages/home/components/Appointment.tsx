@@ -79,7 +79,7 @@ const Appointment = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1  gap-12 items-center">
           {/* Información de la primera sesión */}
           <div className="rounded-2xl p-8" style={{backgroundColor: '#f8f9fa', border: '2px solid #AFAA2C'}}>
             <div className="flex items-center mb-6">
@@ -139,182 +139,20 @@ const Appointment = () => {
           </div>
 
           {/* Formulario de cita */}
-          <div className="bg-white rounded-2xl p-8 border border-gray-100" style={{boxShadow: '0 20px 40px rgba(175, 170, 44, 0.15)'}}>
-            <h4 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-              Solicita tu Cita
-            </h4>
+          <div className="bg-white rounded-2xl ">
             
-            {submitMessage && (
-              <div className={`mb-6 p-4 rounded-lg ${
-                submitMessage.includes('exitosamente') 
-                  ? 'bg-green-100 text-green-700 border border-green-200' 
-                  : 'bg-red-100 text-red-700 border border-red-200'
-              }`}>
-                {submitMessage}
-              </div>
-            )}
+      <div id="calendario-reserva" className="w-full  ">
+        {/* Calendar Form */}
+        <div className="tidycal-wrapper">
+          <iframe
+            className="tidycal-embed"
+            data-path="dr87152/sesion-individua"
+            src="https://tidycal.com/dr87152/sesion-individua?embed=true"
+            style={{border: 'none', width: '1px', minWidth: '100%', height: '399px', overflow: 'hidden', minHeight: '500px'}}
 
-            <form onSubmit={handleSubmit} data-readdy-form id="appointment-form">
-              <div className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Nombre completo *
-                  </label>
-                  <input
-                    type="text"
-                    name="nombre"
-                    value={formData.nombre}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm"
-                    style={{
-                      '--tw-ring-color': '#678E2A',
-                      borderColor: formData.nombre ? '#678E2A' : undefined
-                    } as React.CSSProperties}
-                    placeholder="Tu nombre completo"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm"
-                      style={{
-                        '--tw-ring-color': '#678E2A',
-                        borderColor: formData.email ? '#678E2A' : undefined
-                      } as React.CSSProperties}
-                      placeholder="tu@email.com"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Teléfono *
-                    </label>
-                    <input
-                      type="tel"
-                      name="telefono"
-                      value={formData.telefono}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm"
-                      style={{
-                        '--tw-ring-color': '#678E2A',
-                        borderColor: formData.telefono ? '#678E2A' : undefined
-                      } as React.CSSProperties}
-                      placeholder="+1 234 567 8900"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Fecha preferida *
-                    </label>
-                    <input
-                      type="date"
-                      name="fecha"
-                      value={formData.fecha}
-                      onChange={handleInputChange}
-                      required
-                      min={new Date().toISOString().split('T')[0]}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm"
-                      style={{
-                        '--tw-ring-color': '#678E2A',
-                        borderColor: formData.fecha ? '#678E2A' : undefined
-                      } as React.CSSProperties}
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Hora preferida *
-                    </label>
-                    <select
-                      name="hora"
-                      value={formData.hora}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg text-sm"
-                      style={{
-                        '--tw-ring-color': '#678E2A',
-                        borderColor: formData.hora ? '#678E2A' : undefined
-                      } as React.CSSProperties}
-                    >
-                      <option value="">Selecciona una hora</option>
-                      {timeSlots.map(time => (
-                        <option key={time} value={time}>{time}</option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Modalidad de sesión *
-                  </label>
-                  <select
-                    name="modalidad"
-                    value={formData.modalidad}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg text-sm"
-                    style={{
-                      '--tw-ring-color': '#678E2A',
-                      borderColor: '#678E2A'
-                    } as React.CSSProperties}
-                  >
-                    <option value="online">Sesión Online</option>
-                    <option value="presencial">Sesión Presencial</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Mensaje adicional
-                  </label>
-                  <textarea
-                    name="mensaje"
-                    value={formData.mensaje}
-                    onChange={handleInputChange}
-                    maxLength={500}
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm"
-                    style={{
-                      '--tw-ring-color': '#678E2A',
-                      borderColor: formData.mensaje ? '#678E2A' : undefined
-                    } as React.CSSProperties}
-                    placeholder="Cuéntame brevemente el motivo de tu consulta (opcional)"
-                  />
-                  <p className="text-xs text-gray-500 mt-1">
-                    {formData.mensaje.length}/500 caracteres
-                  </p>
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full text-white py-3 px-6 rounded-lg font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer whitespace-nowrap"
-                  style={{
-                    backgroundColor: '#678E2A',
-                    ':hover': { backgroundColor: '#5a7a24' }
-                  }}
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a7a24'}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#678E2A'}
-                >
-                  {isSubmitting ? 'Enviando...' : 'Agendar Primera Cita'}
-                </button>
-              </div>
-            </form>
+          ></iframe>
+        </div>
+      </div>
           </div>
         </div>
       </div>

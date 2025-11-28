@@ -46,154 +46,41 @@ const TerapiaIndividualPage = () => {
 
       {/* Main Content Section */}
       <section className="py-16">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Service Description */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                ¿En qué consiste la Terapia Individual?
-              </h2>
-              <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
-                <p>
-                  La terapia individual es un proceso de autoconocimiento y crecimiento personal donde trabajamos 
-                  juntos para identificar y superar los obstáculos que te impiden alcanzar tu bienestar emocional 
-                  y desarrollar todo tu potencial.
-                </p>
-                <p>
-                  Durante las sesiones, exploramos tus pensamientos, emociones y patrones de comportamiento, 
-                  desarrollando estrategias personalizadas para manejar el estrés, la ansiedad, la depresión 
-                  o cualquier desafío emocional que estés enfrentando.
-                </p>
-                <p>
-                  Este espacio terapéutico te permite reflexionar sobre tu vida, tomar decisiones más conscientes 
-                  y construir una relación más saludable contigo mismo, mejorando tu calidad de vida y 
-                  relaciones interpersonales.
-                </p>
-              </div>
-            </div>
+  <div className="max-w-6xl mx-auto px-6 lg:px-12">
+    <div className="">
+      {/* Service Description */}
+      <div className="w-full">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          ¿En qué consiste la Terapia Individual?
+        </h2>
+        <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+          <p>
+            Es un proceso personalizado que permite explorar tus pensamientos, emociones y comportamientos, fomentando el autoconocimiento y el desarrollo de habilidades para gestionar situaciones difíciles y toma de decisiones de manera más asertiva.
+            </p>
+          <p>
+Es importante entender que no estás sólo en tu proceso y se establecerá un vínculo de confianza, aceptación y confidencialidad. Con la finalidad de mejorar tu calidad de vida y el que logres alcanzar tus objetivos personales.  
 
-            {/* Calendar Section */}
-            <div id="calendario-reserva" className="bg-gray-50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-[#678E2A] mb-6">
-                Reserva tu Sesión
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Agenda tu primera consulta individual y comienza tu proceso de crecimiento personal.
-              </p>
-              
-              {/* Calendar Form */}
-              <form 
-                action="https://readdy.ai/api/form/d4aijdr6dpbkhrueeqig" 
-                method="POST" 
-                data-readdy-form
-                className="space-y-4"
-              >
-                <input type="hidden" name="servicio" value="Terapia Individual" />
-                
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Nombre Completo *
-                  </label>
-                  <input
-                    type="text"
-                    name="nombre"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="Tu nombre completo"
-                  />
-                </div>
+          </p>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Teléfono *
-                  </label>
-                  <input
-                    type="tel"
-                    name="telefono"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="Tu número de teléfono"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="tu@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Edad
-                  </label>
-                  <input
-                    type="number"
-                    name="edad"
-                    min="18"
-                    max="100"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="Tu edad"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Fecha Preferida *
-                  </label>
-                  <input
-                    type="date"
-                    name="fecha"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Modalidad *
-                  </label>
-                  <select
-                    name="modalidad"
-                    required
-                    className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm appearance-none"
-                  >
-                    <option value="">Selecciona una modalidad</option>
-                    <option value="presencial">Presencial</option>
-                    <option value="online">Online</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Motivo de Consulta
-                  </label>
-                  <textarea
-                    name="motivo_consulta"
-                    rows={3}
-                    maxLength={500}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm resize-none"
-                    placeholder="Cuéntanos brevemente qué te motiva a buscar terapia individual..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-[#678E2A] text-white py-3 px-6 rounded-lg hover:bg-[#5a7a24] transition-colors font-semibold whitespace-nowrap"
-                >
-                  Agendar Cita
-                </button>
-              </form>
-            </div>
-          </div>
         </div>
-      </section>
+      </div>
+
+      {/* Calendar Section */}
+      <div id="calendario-reserva" className="w-full mt-12">
+        {/* Calendar Form */}
+        <div className="tidycal-wrapper">
+          <iframe
+            className="tidycal-embed"
+            data-path="dr87152/sesion-individua"
+            src="https://tidycal.com/dr87152/sesion-individua?embed=true"
+            style={{border: 'none', width: '1px', minWidth: '100%', height: '81px', overflow: 'hidden', minHeight: '500px'}}
+
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Treatment Information */}
       <section className="py-16 bg-gray-50">

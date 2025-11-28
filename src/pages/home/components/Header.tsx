@@ -37,11 +37,14 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
       <nav className="px-6 lg:px-12 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-[#678E2A] font-['Pacifico'] cursor-pointer" onClick={() => navigate('/')}>
+          <h1 className="text-1xl font-light text-[#678E2A] font-['Pacifico'] cursor-pointer flex items-center gap-2" onClick={() => navigate('/')}>
+                      <img src='public/YalimarLogo.png' alt="Logo" className="h-10 cursor-pointer w-35" onClick={() => navigate('/')} />
+
             Yalimar Ruiz
           </h1>
           

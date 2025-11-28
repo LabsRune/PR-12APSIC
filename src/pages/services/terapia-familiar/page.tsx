@@ -45,139 +45,39 @@ const TerapiaFamiliarPage = () => {
 
       {/* Main Content Section */}
       <section className="py-16">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Service Description */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                ¿En qué consiste la Terapia Familiar?
-              </h2>
-              <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
-                <p>
-                  La terapia familiar es un enfoque terapéutico que trabaja con la familia como un sistema completo, 
-                  ayudando a mejorar la comunicación, resolver conflictos y fortalecer los vínculos entre todos los miembros.
-                </p>
-                <p>
-                  Durante las sesiones, exploramos las dinámicas familiares, identificamos patrones de comportamiento 
-                  que pueden estar causando dificultades y desarrollamos estrategias efectivas para crear un ambiente 
-                  familiar más saludable y armonioso.
-                </p>
-                <p>
-                  Este tipo de terapia es especialmente útil para familias que enfrentan cambios importantes, 
-                  conflictos recurrentes, problemas de comunicación o situaciones de crisis que afectan 
-                  la estabilidad del hogar.
-                </p>
-              </div>
-            </div>
-
-            {/* Calendar Section */}
-            <div id="calendario-reserva" className="bg-gray-50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-[#678E2A] mb-6">
-                Reserva tu Sesión
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Agenda tu primera consulta familiar y comienza el camino hacia una mejor convivencia.
-              </p>
-              
-              {/* Calendar Form */}
-              <form 
-                action="https://readdy.ai/api/form/d4aijdr6dpbkhrueeqig" 
-                method="POST" 
-                data-readdy-form
-                className="space-y-4"
-              >
-                <input type="hidden" name="servicio" value="Terapia Familiar" />
-                
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Nombre Completo *
-                  </label>
-                  <input
-                    type="text"
-                    name="nombre"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="Tu nombre completo"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Teléfono *
-                  </label>
-                  <input
-                    type="tel"
-                    name="telefono"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="Tu número de teléfono"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                    placeholder="tu@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Fecha Preferida *
-                  </label>
-                  <input
-                    type="date"
-                    name="fecha"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Modalidad *
-                  </label>
-                  <select
-                    name="modalidad"
-                    required
-                    className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm appearance-none"
-                  >
-                    <option value="">Selecciona una modalidad</option>
-                    <option value="presencial">Presencial</option>
-                    <option value="online">Online</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Comentarios adicionales
-                  </label>
-                  <textarea
-                    name="comentarios"
-                    rows={3}
-                    maxLength={500}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-[#678E2A] focus:outline-none text-sm resize-none"
-                    placeholder="Cuéntanos brevemente sobre tu situación familiar..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-[#678E2A] text-white py-3 px-6 rounded-lg hover:bg-[#5a7a24] transition-colors font-semibold whitespace-nowrap"
-                >
-                  Agendar Cita
-                </button>
-              </form>
-            </div>
-          </div>
+  <div className="max-w-6xl mx-auto px-6 lg:px-12">
+    <div className="">
+      {/* Service Description */}
+      <div className="w-full">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          ¿En qué consiste la Terapia Familiar?
+        </h2>
+        <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+          <p>
+            Durante las sesiones se identifican los patrones que generan conflicto como dificultades de comunicación, uso de sustancias, problemas de salud mental, procesos de duelo y los cambios propios del desarrollo biológico, como la adolescencia para así diseñar estrategias efectivas que favorezcan un ambiente familiar saludable y armonioso.
+          </p>
+          <p>
+            Es necesario entender la forma como se relacionan los miembros de la familia y de qué manera esos vínculos impactan en cada individuo
+          </p>
         </div>
-      </section>
+      </div>
+
+      {/* Calendar Section */}
+      <div id="calendario-reserva" className="w-full  mt-12">
+        {/* Calendar Form */}
+        <div className="tidycal-wrapper">
+          <iframe
+            className="tidycal-embed"
+            data-path="dr87152/sesion-de-terapia-familiar"
+            src="https://tidycal.com/dr87152/sesion-de-terapia-familiar?embed=true"
+            style={{border: 'none', width: '1px', minWidth: '100%', height: '81px', overflow: 'hidden', minHeight: '500px'}}
+
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Treatment Information */}
       <section className="py-16 bg-gray-50">
