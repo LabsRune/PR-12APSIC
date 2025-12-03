@@ -33,8 +33,7 @@ const Hero = () => {
               className="text-xl text-white mb-8 leading-relaxed"
               style={{ textShadow: '0 1px 3px rgba(0, 0, 0, 0.3)' }}
             >
-              Pensando en tu ritmo de vida, brindo sesiones online y consultas presenciales adaptadas a tus necesidades.
-            </p>
+Comienza tu proceso con atención clínica, confidencial y personalizada.            </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
               <div className="flex items-center text-white">
