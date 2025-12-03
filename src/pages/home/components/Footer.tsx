@@ -29,25 +29,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-4 text-[#678E2A]">Enlaces Rápidos</h3>
-            <div className="space-y-2">
-              <a href="#sobre-mi" className="block text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Sobre Mí
-              </a>
-              <a href="/servicios" className="block text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Servicios
-              </a>
-              <a href="#agenda-cita" className="block text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Agenda tu Cita
-              </a>
-              <a href="#blog" className="block text-gray-300 hover:text-white transition-colors cursor-pointer">
-                Blog
-              </a>
-            </div>
-          </div>
-
           {/* Social Media */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-[#678E2A]">Síguenos</h3>
