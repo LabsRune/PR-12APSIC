@@ -20,7 +20,7 @@ const TerapiaParejaPage = () => {
       <section 
         className="pt-24 pb-16 relative"
         style={{
-          backgroundImage: `url(https://readdy.ai/api/search-image?query=Loving%20couple%20sitting%20together%20in%20a%20comfortable%20therapy%20office%2C%20holding%20hands%2C%20looking%20at%20each%20other%20with%20understanding%20and%20affection%2C%20soft%20natural%20lighting%2C%20professional%20counseling%20setting%2C%20relationship%20healing%2C%20emotional%20connection%2C%20warm%20atmosphere%2C%20modern%20interior&width=1200&height=500&seq=pareja1&orientation=landscape)`,
+          backgroundImage: `url('/pareja2.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -52,10 +52,10 @@ const TerapiaParejaPage = () => {
         </h2>
         <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
 <p>
-  Este abordaje brinda un espacio seguro y neutral diseñado para hablar de temas difíciles y, desde una nueva perspectiva, encontrar soluciones sanas y funcionales para la pareja generando nuevos mecanismos para manejar sus diferencias y transformar patrones de comportamiento que generan conflicto.
+
+La finalidad es lograr un espacio seguro y neutral para abordar temas complejos y, desde una nueva perspectiva, encontrar soluciones sanas y funcionales para la pareja.  Busca generar nuevos mecanismos para manejar sus diferencias y transformar patrones de comportamiento que generan conflicto.  Además, enfatiza la importancia de reconocer el valor y condiciones de igualdad dentro de la pareja, al tiempo que se entiende que, aunque compartan un proyecto de vida en común, cada individuo también tiene su propio proyecto de vida
   </p>
-<p>Dejar en claro que dentro de una pareja todos tienen el mismo valor, las mismas oportunidades y entender que aunque tengan un proyecto de vida en común, también cuentan con un proyecto de vida como individuo.
-</p>
+
         </div>
       </div>
 

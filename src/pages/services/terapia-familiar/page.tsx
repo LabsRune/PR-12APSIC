@@ -20,7 +20,7 @@ const TerapiaFamiliarPage = () => {
       <section 
         className="pt-24 pb-16 relative"
         style={{
-          backgroundImage: `url(https://readdy.ai/api/search-image?query=Happy%20multigenerational%20family%20sitting%20together%20in%20a%20bright%20comfortable%20living%20room%20having%20a%20meaningful%20conversation%2C%20warm%20natural%20lighting%2C%20modern%20home%20interior%2C%20peaceful%20atmosphere%2C%20family%20bonding%2C%20therapeutic%20setting%2C%20professional%20counseling%20environment%2C%20diverse%20family%20members%20smiling%20and%20connecting&width=1200&height=500&seq=familia1&orientation=landscape)`,
+          backgroundImage: `url('/familia2.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -55,7 +55,7 @@ const TerapiaFamiliarPage = () => {
             Durante las sesiones se identifican los patrones que generan conflicto como dificultades de comunicación, uso de sustancias, problemas de salud mental, procesos de duelo y los cambios propios del desarrollo biológico, como la adolescencia para así diseñar estrategias efectivas que favorezcan un ambiente familiar saludable y armonioso.
           </p>
           <p>
-            Es necesario entender la forma como se relacionan los miembros de la familia y de qué manera esos vínculos impactan en cada individuo
+             Analizaremos la dinámica familiar y el impacto de estos vínculos en el desarrollo individual de cada miembro.
           </p>
         </div>
       </div>

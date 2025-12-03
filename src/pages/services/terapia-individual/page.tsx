@@ -21,8 +21,9 @@ const TerapiaIndividualPage = () => {
       <section 
         className="pt-24 pb-16 relative"
         style={{
-          backgroundImage: `url(https://readdy.ai/api/search-image?query=Person%20sitting%20comfortably%20in%20a%20peaceful%20therapy%20office%2C%20looking%20confident%20and%20relaxed%2C%20natural%20lighting%2C%20plants%20in%20background%2C%20professional%20counseling%20environment%2C%20personal%20growth%2C%20self-reflection%20setting%2C%20modern%20interior%2C%20serene%20atmosphere&width=1200&height=500&seq=individual1&orientation=landscape)`,
+          backgroundImage: `url('/libertad.jpg')`,
           backgroundSize: 'cover',
+  
           backgroundPosition: 'center'
         }}
       >

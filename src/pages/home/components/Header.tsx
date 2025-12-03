@@ -36,13 +36,16 @@ const Header = () => {
     navigate('/blog');
     setIsMenuOpen(false);
   };
-
+  const handleHomeClick = () => {
+    navigate('/');
+    setIsMenuOpen(false);
+  };
   
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50">
       <nav className="px-6 lg:px-12 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-1xl font-light text-[#678E2A] font-['Pacifico'] cursor-pointer flex items-center gap-2" onClick={() => navigate('/')}>
+          <h1 className="text-1xl font-medium text-[#678E2A]  cursor-pointer flex items-center gap-2" onClick={() => navigate('/')}>
                       <img src='/YalimarLogo.png' alt="LogoYalimarRuiz" className="h-10 cursor-pointer w-35" onClick={() => navigate('/')} />
 
             Yalimar Ruiz
@@ -51,7 +54,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <button 
-              onClick={() => scrollToSection('sobre-mi')}
+              onClick={() => handleHomeClick()}
               className="text-gray-700 hover:text-[#678E2A] font-medium transition-colors cursor-pointer whitespace-nowrap"
             >
               Sobre Mí

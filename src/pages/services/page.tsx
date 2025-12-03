@@ -13,21 +13,21 @@ const ServicesPage = () => {
     {
       id: 'terapia-familiar',
       title: 'Terapia Familiar',
-      backgroundImage: 'https://readdy.ai/api/search-image?query=Happy%20family%20sitting%20together%20in%20a%20comfortable%20living%20room%20having%20a%20meaningful%20conversation%2C%20warm%20lighting%2C%20modern%20home%20interior%2C%20peaceful%20atmosphere%2C%20family%20bonding%2C%20therapeutic%20setting%2C%20professional%20counseling%20environment&width=600&height=400&seq=1&orientation=landscape',
+      backgroundImage:'',
       description: 'Fortalece los vínculos familiares y mejora la comunicación entre todos los miembros de la familia.',
       route: '/servicios/terapia-familiar'
     },
     {
       id: 'terapia-pareja',
       title: 'Terapia de Pareja',
-      backgroundImage: 'https://readdy.ai/api/search-image?query=Couple%20sitting%20together%20in%20a%20comfortable%20therapy%20office%2C%20holding%20hands%2C%20looking%20at%20each%20other%20with%20understanding%2C%20soft%20natural%20lighting%2C%20professional%20counseling%20setting%2C%20relationship%20healing%2C%20emotional%20connection&width=600&height=400&seq=2&orientation=landscape',
+      backgroundImage:'',
       description: 'Reconstruye y fortalece la relación de pareja a través de técnicas especializadas.',
       route: '/servicios/terapia-pareja'
     },
     {
       id: 'terapia-individual',
       title: 'Terapia Individual',
-      backgroundImage: 'https://readdy.ai/api/search-image?query=Person%20sitting%20comfortably%20in%20a%20peaceful%20therapy%20office%2C%20looking%20confident%20and%20relaxed%2C%20natural%20lighting%2C%20plants%20in%20background%2C%20professional%20counseling%20environment%2C%20personal%20growth%2C%20self-reflection%20setting&width=600&height=400&seq=3&orientation=landscape',
+      backgroundImage:'',
       description: 'Crecimiento personal y bienestar emocional a través de un proceso terapéutico personalizado.',
       route: '/servicios/terapia-individual'
     }

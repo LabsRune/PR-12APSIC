@@ -123,7 +123,7 @@ const AgendaCitaPage = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-[#678E2A]">Terapia Presencial</h3>
-                  <p className="text-gray-600">México</p>
+                  <p className="text-gray-600"> Ciudad de México </p>
                 </div>
               </div>
               <p className="text-gray-700 mb-6">
@@ -228,77 +228,6 @@ const AgendaCitaPage = () => {
           ></iframe>
         </div>
 
-        </div>
-      </section>
-
-      {/* Reviews Carousel */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#678E2A] mb-6">
-              Lo Que Dicen Nuestros Pacientes
-            </h2>
-            <p className="text-lg text-gray-700">
-              Testimonios reales de personas que han transformado sus vidas a través de la terapia
-            </p>
-          </div>
-
-          <div className="relative max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-gray-50 to-white p-8 lg:p-12 rounded-2xl shadow-xl shadow-[#AFAA2C]/10 border border-[#AFAA2C]/20">
-              <div className="text-center mb-8">
-                <div className="flex justify-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <div key={i} className="w-6 h-6 flex items-center justify-center">
-                      <i className="ri-star-fill text-[#AFAA2C] text-xl"></i>
-                    </div>
-                  ))}
-                </div>
-                <blockquote className="text-lg lg:text-xl text-gray-700 italic leading-relaxed mb-6">
-                  "{reviews[currentReview].text}"
-                </blockquote>
-                <div className="border-t border-gray-200 pt-6">
-                  <h4 className="text-xl font-bold text-[#678E2A] mb-2">
-                    {reviews[currentReview].name}
-                  </h4>
-                  <p className="text-gray-600 mb-2">{reviews[currentReview].location}</p>
-                  <span className="inline-block bg-[#678E2A]/10 text-[#678E2A] px-4 py-2 rounded-full text-sm font-medium">
-                    {reviews[currentReview].service}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Navigation Buttons */}
-            <button
-              onClick={prevReview}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white shadow-lg shadow-[#AFAA2C]/20 rounded-full flex items-center justify-center hover:bg-[#678E2A] hover:text-white transition-colors cursor-pointer group"
-            >
-              <div className="w-6 h-6 flex items-center justify-center">
-                <i className="ri-arrow-left-line text-xl"></i>
-              </div>
-            </button>
-            <button
-              onClick={nextReview}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white shadow-lg shadow-[#AFAA2C]/20 rounded-full flex items-center justify-center hover:bg-[#678E2A] hover:text-white transition-colors cursor-pointer group"
-            >
-              <div className="w-6 h-6 flex items-center justify-center">
-                <i className="ri-arrow-right-line text-xl"></i>
-              </div>
-            </button>
-
-            {/* Dots Indicator */}
-            <div className="flex justify-center mt-8 gap-2">
-              {reviews.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentReview(index)}
-                  className={`w-3 h-3 rounded-full transition-colors cursor-pointer ${
-                    index === currentReview ? 'bg-[#678E2A]' : 'bg-gray-300'
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 

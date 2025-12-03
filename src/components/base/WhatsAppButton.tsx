@@ -1,7 +1,7 @@
 
 const WhatsAppButton = () => {
 const handleWhatsAppClick = () => {
-  const phoneNumber = "9327497";
+  const phoneNumber = "5554667208";
   const message = "Hola, me gustaría obtener más información sobre los servicios de terapia psicológica.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}&lang=es`;
   window.open(whatsappUrl, '_blank');

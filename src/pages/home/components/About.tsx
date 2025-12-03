@@ -14,7 +14,8 @@ const About = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src="https://readdy.ai/api/search-image?query=Professional%20female%20psychologist%20in%20her%20office%2C%20warm%20smile%2C%20professional%20attire%2C%20confident%20and%20approachable%20appearance%2C%20sitting%20at%20desk%20with%20books%20and%20diploma%20in%20background%2C%20natural%20lighting%2C%20welcoming%20therapeutic%20environment%2C%20Latin%20American%20woman%20professional%20therapist&width=600&height=700&seq=psychologist1&orientation=portrait"
+                src="/yalimar-ruiz-psicologa.jpg"
+                
                 alt="Dra. Yalimar Ruiz - Psicóloga Clínica"
                 className="w-full rounded-2xl shadow-2xl object-cover object-top"
               />
@@ -43,8 +44,8 @@ const About = () => {
 Hola, soy psicologa clínica con especialización en evaluación y diagnostico de la personalidad. Mi experiencia se centra en el abordaje terapéutico de la depresión, ansiedad, autoestima y tipos de apego.
                 </p>
                 
-                <p className="mb-6">
-Mi intención es acompañarte y brindarte un espacio seguro a lo largo de tu proceso. En nuestras sesiones lograremos identificar síntomas, ideas y conductas que necesiten ser reestructuradas para generar nuevas habilidades de enfrentamiento para lograr tu bienestar.
+                <p className="mb-6 text-justify">
+Mi intención es acompañarte y brindarte un espacio seguro a lo largo de tu proceso. En nuestras sesiones lograremos identificar síntomas, ideas y conductas que necesiten ser reestructuradas para generar nuevas habilidades de afrontamiento para lograr tu bienestar.
 Todos atravesamos momentos difíciles y hablar con un profesional te ayudará a procesar lo que sientes 
 
                 </p>

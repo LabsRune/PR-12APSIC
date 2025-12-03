@@ -12,7 +12,7 @@ const Hero = () => {
       id="sobre-mi" 
       className="relative min-h-screen flex items-center justify-center"
       style={{
-        backgroundImage: `url('https://readdy.ai/api/search-image?query=Professional%20psychology%20therapy%20office%20with%20warm%20ambient%20lighting%2C%20comfortable%20seating%20area%2C%20soft%20natural%20colors%2C%20modern%20and%20welcoming%20interior%20design%2C%20plants%20and%20natural%20elements%2C%20peaceful%20atmosphere%20for%20mental%20health%20consultation%2C%20clean%20minimalist%20aesthetic%20with%20therapeutic%20ambiance&width=1920&height=1080&seq=hero1&orientation=landscape')`,
+        backgroundImage: `url('/sala.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
@@ -26,7 +26,7 @@ const Hero = () => {
               className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               style={{ textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)' }}
             >
-              Cuidarte es el inicio de todo
+              Cuidar de ti es el inicio de todo
             </h2>
             
             <p 
