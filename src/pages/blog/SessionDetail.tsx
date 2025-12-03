@@ -80,7 +80,7 @@ const SessionDetail = () => {
 
     const loadContent = async () => {
       try {
-        const response = await fetch(`/src/content/sessions/${session.contentFile}`);
+        const response = await fetch(`/content/sessions/${session.contentFile}`);
         const text = await response.text();
         setContent(text);
       } catch (error) {
