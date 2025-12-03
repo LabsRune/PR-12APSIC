@@ -89,11 +89,6 @@ const Footer = () => {
           <p className="text-gray-400">
             © 2024 Yalimar Ruiz - Psicóloga Clínica. Todos los derechos reservados.
           </p>
-          <p className="text-gray-500 mt-2">
-            <a href="https://readdy.ai/?origin=logo" className="hover:text-gray-300 transition-colors">
-              Website Builder
-            </a>
-          </p>
         </div>
       </div>
     </footer>
