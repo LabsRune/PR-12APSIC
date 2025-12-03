@@ -1,0 +1,50 @@
+[
+  {
+    "id": "depresion-sin-motivo-aparente",
+    "title": "La depresión que aparece cuando \"todo va bien\"",
+    "slug": "depresion-sin-motivo-aparente",
+    "excerpt": "Muchas personas creen que la depresión solo aparece después de una pérdida o trauma. Descubre por qué la depresión sin motivo aparente también es válida y merece atención.",
+    "category": "Salud Mental",
+    "image": "/assets/depresion_sin_motivo_aparente.png",
+    "date": "2024-12-01",
+    "readTime": "6 min lectura",
+    "featured": true,
+    "contentFile": "depresion-sin-motivo-aparente.md"
+  },
+  {
+    "id": "control-sintoma-miedo",
+    "title": "Cuando el control es un síntoma de miedo",
+    "slug": "control-sintoma-miedo",
+    "excerpt": "El control en las relaciones no comienza como maldad, sino como reacción emocional. Descubre cómo el miedo se manifiesta en conductas controladoras.",
+    "category": "Relaciones",
+    "image": "/assets/control_sintoma_miedo.png",
+    "date": "2024-11-28",
+    "readTime": "7 min lectura",
+    "featured": true,
+    "contentFile": "control-sintoma-miedo.md"
+  },
+  {
+    "id": "peso-emocional-cuidador",
+    "title": "El peso emocional del cuidador y del sistema familiar",
+    "slug": "peso-emocional-cuidador",
+    "excerpt": "Cuando un miembro de la familia enfrenta una crisis, todos se ven afectados. Descubre cómo la terapia familiar ayuda a sanar juntos.",
+    "category": "Terapia Familiar",
+    "image": "/assets/peso_emocional_cuidador_sistema_familiar.png",
+    "date": "2024-11-25",
+    "readTime": "8 min lectura",
+    "featured": true,
+    "contentFile": "peso-emocional-cuidador.md"
+  },
+  {
+    "id": "miedo-abandono-decisiones",
+    "title": "El miedo al abandono y cómo influye en tus decisiones",
+    "slug": "miedo-abandono-decisiones",
+    "excerpt": "El miedo al abandono puede gobernar tu vida sin que lo notes. Aprende cómo reconocerlo y recuperar tu libertad emocional.",
+    "category": "Desarrollo Personal",
+    "image": "/assets/miedo_abandono_influye_decisiones.png",
+    "date": "2024-11-22",
+    "readTime": "7 min lectura",
+    "featured": false,
+    "contentFile": "miedo-abandono-decisiones.md"
+  }
+]
