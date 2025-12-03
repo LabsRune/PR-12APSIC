@@ -96,12 +96,6 @@ const SessionDetail = () => {
 
   if (!session) return null;
 
-  const formattedDate = new Date(session.date).toLocaleDateString('es-ES', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
-  });
-
   const currentIndex = sessionsData.findIndex((s: Session) => s.slug === slug);
   const previousSession = currentIndex > 0 ? sessionsData[currentIndex - 1] : null;
   const nextSession = currentIndex < sessionsData.length - 1 ? sessionsData[currentIndex + 1] : null;
@@ -138,8 +132,6 @@ const SessionDetail = () => {
           {/* Article Meta */}
           <div className="flex items-center justify-center gap-6 text-gray-500 mb-12 pb-8 border-b border-gray-200">
             <span className="flex items-center gap-2">
-              <i className="ri-calendar-line text-[#678E2A]"></i>
-              {formattedDate}
             </span>
             <span className="flex items-center gap-2">
               <i className="ri-time-line text-[#678E2A]"></i>
