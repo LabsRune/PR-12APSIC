@@ -7,11 +7,7 @@ import TerapiaParejaPage from "../pages/services/terapia-pareja/page";
 import TerapiaIndividualPage from "../pages/services/terapia-individual/page";
 import AgendaCitaPage from "../pages/agenda-cita/page";
 import BlogPage from '../pages/blog/page';
-import AnsiedadPost from '../pages/blog/ansiedad-sintomas-tratamiento/page';
-import DepresionPost from '../pages/blog/depresion-como-identificarla/page';
-import EstresLaboralPost from '../pages/blog/estres-laboral-manejo/page';
-import AutoestimaPost from '../pages/blog/autoestima-fortalecimiento/page';
-import RelacionesPost from '../pages/blog/relaciones-saludables-comunicacion/page';
+import SessionDetail from '../pages/blog/SessionDetail';
 
 const routes: RouteObject[] = [
   {
@@ -43,24 +39,8 @@ const routes: RouteObject[] = [
     element: <BlogPage />
   },
   {
-    path: "/blog/ansiedad-sintomas-tratamiento",
-    element: <AnsiedadPost />
-  },
-  {
-    path: "/blog/depresion-como-identificarla",
-    element: <DepresionPost />
-  },
-  {
-    path: "/blog/estres-laboral-manejo",
-    element: <EstresLaboralPost />
-  },
-  {
-    path: "/blog/autoestima-fortalecimiento",
-    element: <AutoestimaPost />
-  },
-  {
-    path: "/blog/relaciones-saludables-comunicacion",
-    element: <RelacionesPost />
+    path: "/blog/:slug",
+    element: <SessionDetail />
   },
   {
     path: "*",
