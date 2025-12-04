@@ -221,8 +221,8 @@ const AgendaCitaPage = () => {
           <iframe
             className="tidycal-embed"
             title='Calendario de disponibilidad de Yalimar para las consultas'
-            data-path="dr87152/sesion-individua"
-            src="https://tidycal.com/dr87152/sesion-individua?embed=true"
+            data-path="psicologaclinicayalimar/15-minute-meeting"
+            src="https://tidycal.com/psicologaclinicayalimar/15-minute-meeting?embed=true"
             style={{border: 'none', width: '1px', minWidth: '100%', height: '399px', overflow: 'hidden', minHeight: '500px'}}
 
           ></iframe>

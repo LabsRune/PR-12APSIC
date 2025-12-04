@@ -67,8 +67,8 @@ La finalidad es lograr un espacio seguro y neutral para abordar temas complejos 
             className="tidycal-embed"
             title='Calendario de disponibilidad de Yalimar para las consultas'
 
-            data-path="dr87152/sesion-en-pareja"
-            src="https://tidycal.com/dr87152/sesion-en-pareja?embed=true"
+            data-path="psicologaclinicayalimar/sesion-de-terapia-de-pareja"
+            src="https://tidycal.com/psicologaclinicayalimar/sesion-de-terapia-de-pareja?embed=true"
             style={{border: 'none', width: '1px', minWidth: '100%', height: '81px', overflow: 'hidden', minHeight: '500px'}}
 
           ></iframe>
