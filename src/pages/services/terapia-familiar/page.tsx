@@ -50,16 +50,15 @@ const TerapiaFamiliarPage = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           ¿En qué consiste la Terapia Familiar?
         </h2>
-        <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+        <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-justify">
           <p>
             Durante las sesiones se identifican los patrones que generan conflicto como dificultades de comunicación, uso de sustancias, problemas de salud mental, procesos de duelo y los cambios propios del desarrollo biológico, como la adolescencia para así diseñar estrategias efectivas que favorezcan un ambiente familiar saludable y armonioso.
           </p>
-          <p>
+          <p className="text-justify">
              Analizaremos la dinámica familiar y el impacto de estos vínculos en el desarrollo individual de cada miembro.
           </p>
         </div>
       </div>
-
       {/* Calendar Section */}
       <div id="calendario-reserva" className="w-full  mt-12">
         {/* Calendar Form */}
@@ -92,7 +91,7 @@ const TerapiaFamiliarPage = () => {
                 <i className="ri-time-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Duración</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Cada sesión tiene una duración de 60 minutos. El tratamiento completo 
                 puede variar entre 8-16 sesiones dependiendo de las necesidades familiares.
               </p>
@@ -114,7 +113,7 @@ const TerapiaFamiliarPage = () => {
                 <i className="ri-heart-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Beneficios</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Mejora la comunicación, fortalece vínculos, resuelve conflictos y 
                 crea un ambiente familiar más saludable y armonioso.
               </p>
@@ -125,7 +124,7 @@ const TerapiaFamiliarPage = () => {
                 <i className="ri-shield-check-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Confidencialidad</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Todas las sesiones se manejan con estricta confidencialidad profesional, 
                 creando un espacio seguro para la expresión familiar.
               </p>
@@ -136,7 +135,7 @@ const TerapiaFamiliarPage = () => {
                 <i className="ri-calendar-check-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Flexibilidad</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Ofrecemos horarios flexibles y modalidades presencial u online 
                 para adaptarnos a las necesidades de tu familia.
               </p>
@@ -147,7 +146,7 @@ const TerapiaFamiliarPage = () => {
                 <i className="ri-star-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Resultados</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Familias más unidas, mejor comunicación y herramientas efectivas 
                 para manejar futuros desafíos de manera constructiva.
               </p>

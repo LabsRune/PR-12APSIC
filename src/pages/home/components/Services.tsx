@@ -41,7 +41,7 @@ const Services = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Terapia Psicológica Personalizada
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-justify">
             Ofrecemos servicios especializados adaptados a tus necesidades específicas, 
             con un enfoque profesional y humano para tu bienestar emocional.
           </p>

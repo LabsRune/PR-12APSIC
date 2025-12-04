@@ -52,11 +52,11 @@ const TerapiaIndividualPage = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           ¿En qué consiste la Terapia Individual?
         </h2>
-        <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+        <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-justify">
           <p>
             Es un proceso personalizado que permite explorar tus pensamientos, emociones y comportamientos, fomentando el autoconocimiento y el desarrollo de habilidades para gestionar situaciones difíciles y toma de decisiones de manera más asertiva.
             </p>
-          <p>
+          <p className="text-justify">
 Es importante entender que no estás sólo en tu proceso y se establecerá un vínculo de confianza, aceptación y confidencialidad. Con la finalidad de mejorar tu calidad de vida y el que logres alcanzar tus objetivos personales.  
 
           </p>
@@ -96,7 +96,7 @@ Es importante entender que no estás sólo en tu proceso y se establecerá un v�
                 <i className="ri-time-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Duración</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Sesiones de 50 minutos. La duración del tratamiento varía según 
                 objetivos personales, típicamente entre 8-24 sesiones.
               </p>
@@ -107,7 +107,7 @@ Es importante entender que no estás sólo en tu proceso y se establecerá un v�
                 <i className="ri-user-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Personalizado</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Cada proceso es único y se adapta a tus necesidades específicas, 
                 ritmo personal y objetivos de crecimiento.
               </p>
@@ -118,7 +118,7 @@ Es importante entender que no estás sólo en tu proceso y se establecerá un v�
                 <i className="ri-heart-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Bienestar</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Mejora tu autoestima, manejo del estrés, relaciones interpersonales 
                 y calidad de vida general.
               </p>
@@ -129,7 +129,7 @@ Es importante entender que no estás sólo en tu proceso y se establecerá un v�
                 <i className="ri-shield-check-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Confidencialidad</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Espacio completamente confidencial y seguro donde puedes expresarte 
                 libremente sin temor al juicio.
               </p>
@@ -140,7 +140,7 @@ Es importante entender que no estás sólo en tu proceso y se establecerá un v�
                 <i className="ri-lightbulb-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Autoconocimiento</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Desarrolla mayor conciencia sobre tus patrones, fortalezas y 
                 áreas de crecimiento personal.
               </p>
@@ -151,7 +151,7 @@ Es importante entender que no estás sólo en tu proceso y se establecerá un v�
                 <i className="ri-trophy-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Resultados</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Mayor claridad mental, herramientas de afrontamiento efectivas y 
                 una vida más plena y satisfactoria.
               </p>

@@ -40,7 +40,7 @@ const About = () => {
               
               <div className="prose prose-lg text-gray-600">
 
-                <p className="mb-6">
+                <p className="mb-6 text-justify">
 Hola, soy psicologa clínica con especialización en evaluación y diagnostico de la personalidad. Mi experiencia se centra en el abordaje terapéutico de la depresión, ansiedad, autoestima y tipos de apego.
                 </p>
                 

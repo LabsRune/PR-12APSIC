@@ -50,7 +50,7 @@ const TerapiaParejaPage = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           ¿En qué consiste la Terapia en Pareja?
         </h2>
-        <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+        <div className="space-y-4 text-gray-600 text-lg leading-relaxed text-justify">
 <p>
 
 La finalidad es lograr un espacio seguro y neutral para abordar temas complejos y, desde una nueva perspectiva, encontrar soluciones sanas y funcionales para la pareja.  Busca generar nuevos mecanismos para manejar sus diferencias y transformar patrones de comportamiento que generan conflicto.  Además, enfatiza la importancia de reconocer el valor y condiciones de igualdad dentro de la pareja, al tiempo que se entiende que, aunque compartan un proyecto de vida en común, cada individuo también tiene su propio proyecto de vida
@@ -91,7 +91,7 @@ La finalidad es lograr un espacio seguro y neutral para abordar temas complejos 
                 <i className="ri-time-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Duración</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Sesiones de 60 minutos. El proceso terapéutico típicamente requiere 
                 entre 10-20 sesiones, dependiendo de los objetivos y complejidad de la situación.
               </p>
@@ -102,7 +102,7 @@ La finalidad es lograr un espacio seguro y neutral para abordar temas complejos 
                 <i className="ri-heart-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Compromiso</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Es importante que ambos miembros de la pareja estén comprometidos 
                 con el proceso terapéutico para obtener los mejores resultados.
               </p>
@@ -113,7 +113,7 @@ La finalidad es lograr un espacio seguro y neutral para abordar temas complejos 
                 <i className="ri-chat-3-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Comunicación</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Trabajamos técnicas de comunicación asertiva, escucha activa y 
                 expresión emocional saludable para mejorar la conexión de pareja.
               </p>
@@ -124,7 +124,7 @@ La finalidad es lograr un espacio seguro y neutral para abordar temas complejos 
                 <i className="ri-shield-check-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Espacio Seguro</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Creamos un ambiente neutral y seguro donde ambos pueden expresar 
                 sus sentimientos sin juicio y con total confidencialidad.
               </p>
@@ -135,7 +135,7 @@ La finalidad es lograr un espacio seguro y neutral para abordar temas complejos 
                 <i className="ri-tools-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Herramientas</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Proporcionamos técnicas y ejercicios prácticos que pueden aplicar 
                 en casa para fortalecer su relación día a día.
               </p>
@@ -146,7 +146,7 @@ La finalidad es lograr un espacio seguro y neutral para abordar temas complejos 
                 <i className="ri-refresh-line text-white text-xl"></i>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Renovación</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 El objetivo es renovar y fortalecer el vínculo amoroso, 
                 redescubriendo la conexión y construyendo un futuro juntos.
               </p>
