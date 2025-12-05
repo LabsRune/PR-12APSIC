@@ -36,7 +36,7 @@ const Appointment = () => {
                 <div>
                   <h5 className="font-semibold text-gray-800 mb-2">15 minutos gratuitos</h5>
                   <p className="text-gray-600 text-sm">
-                    Una breve conversación para conocernos y que puedas entender mi enfoque terapéutico.
+                    Una breve conversación para conocernos y que puedas entender mi enfoque terapéutico. Definir el tipo de sesión que necesitas (presencial u online).
                   </p>
                 </div>
               </div>

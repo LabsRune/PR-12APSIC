@@ -7,6 +7,8 @@ const Hero = () => {
     }
   };
 
+
+
   return (
     <section 
       id="sobre-mi" 
@@ -41,7 +43,8 @@ Comienza tu proceso con atención clínica, confidencial y personalizada.       
                   <i className="ri-computer-line text-lg"></i>
                 </div>
                 <span 
-                  className="font-medium"
+                  onClick={scrollToAppointment}
+                  className="font-medium cursor-pointer"
                   style={{ textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)' }}
                 >
                   Sesiones Online
@@ -52,7 +55,8 @@ Comienza tu proceso con atención clínica, confidencial y personalizada.       
                   <i className="ri-building-line text-lg"></i>
                 </div>
                 <span 
-                  className="font-medium"
+                  onClick={scrollToAppointment}
+                  className="font-medium cursor-pointer"
                   style={{ textShadow: '0 1px 2px rgba(0, 0, 0, 0.3)' }}
                 >
                   Consultas Presenciales

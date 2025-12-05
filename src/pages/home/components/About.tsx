@@ -70,7 +70,7 @@ Todos atravesamos momentos difíciles y hablar con un profesional te ayudará a 
                     <span 
                       key={index}
                       className="px-4 py-2 rounded-full text-sm font-medium text-white"
-                      style={{backgroundColor: '#AFAA2C'}}
+                      style={{backgroundColor: '#678E2A'}}
                     >
                       {specialty}
                     </span>
