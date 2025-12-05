@@ -34,32 +34,25 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 text-[#678E2A]">Síguenos</h3>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/p/Psic%C3%B3loga-Yalimar-Ruiz-61556529202347/" 
                 className="w-10 h-10 bg-[#035BA1] rounded-full flex items-center justify-center hover:bg-[#024a8a] transition-colors cursor-pointer"
                 aria-label="Facebook"
               >
                 <i className="ri-facebook-fill text-white"></i>
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/psicologaclinicaruiz?igsh=OW51azI2cXNwbHN6" 
                 className="w-10 h-10 bg-[#035BA1] rounded-full flex items-center justify-center hover:bg-[#024a8a] transition-colors cursor-pointer"
                 aria-label="Instagram"
               >
                 <i className="ri-instagram-line text-white"></i>
               </a>
               <a 
-                href="#" 
+                href="https://www.tiktok.com/@psicologaclinicaruiz?_t=8kLqsydd0qs&_r=1&utm_source=ig&utm_medium=social&utm_content=link_in_bio" 
                 className="w-10 h-10 bg-[#035BA1] rounded-full flex items-center justify-center hover:bg-[#024a8a] transition-colors cursor-pointer"
-                aria-label="LinkedIn"
+                aria-label="TikTok"
               >
-                <i className="ri-linkedin-fill text-white"></i>
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-[#035BA1] rounded-full flex items-center justify-center hover:bg-[#024a8a] transition-colors cursor-pointer"
-                aria-label="WhatsApp"
-              >
-                <i className="ri-whatsapp-line text-white"></i>
+                <i className="ri-tiktok-fill text-white"></i>
               </a>
             </div>
           </div>
