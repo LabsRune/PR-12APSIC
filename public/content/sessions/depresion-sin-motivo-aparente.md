@@ -1,4 +1,4 @@
-# La depresión en medio de "todo va bien"
+# La depresión en medio de "Todo va bien"
 
 ## Un tema muy interesante y poco hablado
 
