@@ -76,20 +76,53 @@ const Appointment = () => {
           {/* Formulario de cita */}
           <div className="bg-white rounded-2xl ">
             
-      <div id="calendario-reserva" className="w-full  ">
-        {/* Calendar Form */}
-        <div className="tidycal-wrapper">
-          <iframe
-            className="tidycal-embed"
-            title='Calendario de disponibilidad de Yalimar para las consultas'
+<div id="calendario-reserva" className="w-full">
+  <div className="tidycal-wrapper flex flex-col md:flex-row w-full justify-center space-y-8 md:space-y-0 md:space-x-8">
 
-            data-path="psicologaclinicayalimar/15-minute-meeting"
-            src="https://tidycal.com/psicologaclinicayalimar/15-minute-meeting?embed=true"
-            style={{border: 'none', width: '1px', minWidth: '100%', height: '399px', overflow: 'hidden', minHeight: '500px'}}
-
-          ></iframe>
-        </div>
+    {/* Sesión Presencial */}
+    <div className="w-full md:w-1/2 flex flex-col items-center">
+      <div className="mb-2 px-4 py-1 bg-blue-100 text-blue-800 font-semibold rounded-full text-sm">
+        Sesión Presencial
       </div>
+
+      <iframe
+        className="tidycal-embed w-full"
+        title="Calendario sesión presencial"
+        data-path="psicologaclinicayalimar/15-minute-meeting"
+        src="https://tidycal.com/psicologaclinicayalimar/15-minute-meeting?embed=true"
+        style={{
+          border: 'none',
+          height: '399px',
+          overflow: 'hidden',
+          minHeight: '500px'
+        }}
+      ></iframe>
+    </div>
+
+    {/* Sesión Online */}
+    <div className="w-full md:w-1/2 flex flex-col items-center">
+      <div className="mb-2 px-4 py-1 bg-green-100 text-green-800 font-semibold rounded-full text-sm">
+        Sesión Online
+      </div>
+
+      <iframe
+        className="tidycal-embed w-full"
+        title="Calendario sesión online"
+        data-path="psicologaclinicayalimar/15-minute-meeting"
+        src="https://tidycal.com/psicologaclinicayalimar/15-minute-meeting?embed=true"
+        style={{
+          border: 'none',
+          height: '399px',
+          overflow: 'hidden',
+          minHeight: '500px'
+        }}
+      ></iframe>
+    </div>
+
+  </div>
+</div>
+
+
           </div>
         </div>
       </div>
