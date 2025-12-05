@@ -5,11 +5,10 @@ Allow: /servicios/terapia-familiar
 Allow: /servicios/terapia-pareja
 Allow: /servicios/terapia-individual
 Allow: /blog
-Allow: /blog/ansiedad-sintomas-tratamiento
-Allow: /blog/depresion-como-identificarla
-Allow: /blog/estres-laboral-manejo
-Allow: /blog/autoestima-fortalecimiento
-Allow: /blog/relaciones-saludables-comunicacion
+Allow: /blog/depresion-sin-motivo-aparente
+Allow: /blog/control-sintoma-miedo
+Allow: /blog/peso-emocional-cuidador
+Allow: /blog/miedo-abandono-decisiones
 Disallow: /agenda-cita
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://saludmentalypsicologia.net/sitemap.xml
